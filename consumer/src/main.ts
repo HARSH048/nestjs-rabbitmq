@@ -9,6 +9,7 @@ async function bootstrap() {
     options: {
       urls: ['amqp://guest:guest@localhost:5672/'],
       queue: 'TEST_QUEUE',
+        noAck:false,
       queueOptions: {
         durable: false,
       },

@@ -15,7 +15,7 @@ export class AppController{
       const channel = context.getChannelRef();
       const originalMsg = context.getMessage();
       console.log('Received message:', data);
-      channel.ack(originalMsg);
+        channel.ack(originalMsg);
     } catch (error) {
       console.error('Error handling message:', error);
     }
